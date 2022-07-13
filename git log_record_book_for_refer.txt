@@ -1,0 +1,435 @@
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~
+$ git --version
+git version 2.37.0.windows.1
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~
+$ git config --global user.name "ajmins"
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~
+$ git config --global user.email "ajmi.ns@inapp.com"
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~
+$ pwd
+/c/Users/Ajmi
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~
+$ mkdir gittest
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ OpenVPN/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ gittest/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~
+$ pwd
+/c/Users/Ajmi
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~
+$ cd gittest/
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest
+$ pwd
+/c/Users/Ajmi/gittest
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest
+$ git init
+Initialized empty Git repository in C:/Users/Ajmi/gittest/.git/
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ ls
+mycode.py
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ pwd
+/c/Users/Ajmi/gittest
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mycode.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git add mycode.py
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   mycode.py
+
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git rm --cached mycode.py
+rm 'mycode.py'
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mycode.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ ls
+README.md  mycode.py
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        mycode.py
+        mymodule.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        mycode.py
+        mymodule.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git add --all
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   mycode.py
+        new file:   mymodule.py
+
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git add -A
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   mycode.py
+        new file:   mymodule.py
+
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git commit -m "This is my fisrt version"
+[master (root-commit) 3167e60] This is my fisrt version
+ 3 files changed, 7 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 mycode.py
+ create mode 100644 mymodule.py
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git log
+commit 3167e60cf1447b8782b71046cbf33c95190c6a34 (HEAD -> master)
+Author: ajmins <ajmi.ns@inapp.com>
+Date:   Wed Jul 13 12:56:35 2022 +0530
+
+    This is my fisrt version
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   mycode.py
+        modified:   mymodule.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git stash save "temp save my unsure changes"
+Saved working directory and index state On master: temp save my unsure changes
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git stash list
+stash@{0}: On master: temp save my unsure changes
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git stash list
+stash@{0}: On master: temp save my unsure changes
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git stash apply stash@{0}
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   mycode.py
+        modified:   mymodule.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   mycode.py
+        modified:   mymodule.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git stash show
+ mycode.py   | 3 ++-
+ mymodule.py | 3 ++-
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git log
+commit 3167e60cf1447b8782b71046cbf33c95190c6a34 (HEAD -> master)
+Author: ajmins <ajmi.ns@inapp.com>
+Date:   Wed Jul 13 12:56:35 2022 +0530
+
+    This is my fisrt version
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git show
+commit 3167e60cf1447b8782b71046cbf33c95190c6a34 (HEAD -> master)
+Author: ajmins <ajmi.ns@inapp.com>
+Date:   Wed Jul 13 12:56:35 2022 +0530
+
+    This is my fisrt version
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..5fc49ee
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,2 @@
++This is my first repository .
++Trying to learn git here.
+\ No newline at end of file
+diff --git a/mycode.py b/mycode.py
+new file mode 100644
+index 0000000..a80e0db
+--- /dev/null
++++ b/mycode.py
+@@ -0,0 +1,4 @@
++import mymodule
++
++print("Hi everyone!")
++print("Hello wordl!")
+\ No newline at end of file
+diff --git a/mymodule.py b/mymodule.py
+new file mode 100644
+index 0000000..1b27356
+--- /dev/null
++++ b/mymodule.py
+@@ -0,0 +1 @@
++print("This is my new module.")
+\ No newline at end of file
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git commit show
+error: pathspec 'show' did not match any file(s) known to git
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git stash drop
+Dropped refs/stash@{0} (c781c19448174e52a78185c71d227e832e8d43a2)
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git stash clear
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git branch
+* master
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git branch newbie-module
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git branch
+* master
+  newbie-module
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git checkout newbie-module
+Switched to branch 'newbie-module'
+M       mycode.py
+M       mymodule.py
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ git branch
+  master
+* newbie-module
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ ls
+README.md  mycode.py  mymodule.py
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ git status
+On branch newbie-module
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   mycode.py
+        modified:   mymodule.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img1.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ git add --all
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ git status
+On branch newbie-module
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   img1.png
+        modified:   mycode.py
+        modified:   mymodule.py
+
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ git commit -m "Completed the newbie module changes"
+[newbie-module ec30c25] Completed the newbie module changes
+ 3 files changed, 5 insertions(+), 2 deletions(-)
+ create mode 100644 img1.png
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ git status
+On branch newbie-module
+nothing to commit, working tree clean
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ git checkout master
+Switched to branch 'master'
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ ls
+README.md  mycode.py  mymodule.py
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git checkout newbie-module
+Switched to branch 'newbie-module'
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ git checkout master
+Switched to branch 'master'
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git merge newbie-module
+Updating 3167e60..ec30c25
+Fast-forward
+ img1.png    | Bin 0 -> 77953 bytes
+ mycode.py   |   4 +++-
+ mymodule.py |   3 ++-
+ 3 files changed, 5 insertions(+), 2 deletions(-)
+ create mode 100644 img1.png
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ git checkout newbie-module
+Switched to branch 'newbie-module'
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ ls
+README.md  img1.png  mycode.py  mymodule.py
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (newbie-module)
+$ git checkout master
+Switched to branch 'master'
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ ls
+README.md  img1.png  mycode.py  mymodule.py
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$ ^C
+
+Ajmi@DESKTOP-CJEOG7N MINGW64 ~/gittest (master)
+$
